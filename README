@@ -1,4 +1,4 @@
- cdAccordeon - jQuery plugin for accordion navigations
+ cdAccordion - jQuery plugin for accordion navigations
  
  Examples:
         $("#mylist").cdAccordion();
