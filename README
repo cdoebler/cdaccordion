@@ -1,0 +1,25 @@
+ cdAccordeon - jQuery plugin for accordion navigations
+ 
+ Examples:
+        $("#mylist").cdAccordion();
+
+        $("#mylist").cdAccordion({
+                        expandDuration:    200,
+                        collapseDuration:  800
+                    });
+
+        In the examples above, #mylist is the id of a html ul element.
+        
+ Options and default values:
+        expandDuration:     600
+        collapseDuration:   600
+        indentMin:          "0px"
+        indentMax:          "7px"
+        indentDuration:     200
+        indentEasing:       "linear"
+        unindentDuration:   200
+        unindentEasing:     "linear"
+        activeClass:        "active"
+ 
+ Author:  Christian Doebler <info@christian-doebler.net>
+ License: http://www.gnu.org/licenses/gpl.html [GNU General Public License]
