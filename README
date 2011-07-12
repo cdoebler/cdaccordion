@@ -11,6 +11,8 @@
         In the examples above, #mylist is the id of a html ul element.
         
  Options and default values:
+        expandDelay:        300
+        collapseDelay:      200
         expandDuration:     600
         collapseDuration:   600
         indentMin:          "0px"

@@ -9,6 +9,8 @@
  *					});
  *		
  * Options and default values:
+ *		expandDelay:		300
+ *		collapseDelay:		200
  *		expandDuration:		600
  *		collapseDuration:	600
  *		indentMin:			"0px"
@@ -26,6 +28,8 @@
 (function($){
 
 	var settings = {
+		expandDelay:		300,
+		collapseDelay:		200,
 		expandDuration:		600,
 		collapseDuration:	600,
 		indentMin:			"0px",
@@ -59,12 +63,14 @@
 							if (this != currentEl) {
 								$(this)
 									.children("ul:visible")
+									.delay(settings.collapseDelay)
 									.slideUp(settings.collapseDuration);
 							}
 						});
 
 					$(this)
 						.children("ul:hidden")
+						.delay(settings.expandDelay)
 						.slideDown(settings.expandDuration);
 				}
 			});
@@ -82,6 +88,7 @@
 					.each(function(index, el){
 						$(el)
 							.children("ul:visible")
+							.delay(settings.collapseDelay)
 							.slideUp(settings.collapseDuration);
 					});
 				
@@ -90,6 +97,7 @@
 					.each(function(index, el){
 						$(el)
 							.children("ul:hidden")
+							.delay(settings.expandDelay)
 							.slideDown(settings.expandDuration);
 					});
 			});
